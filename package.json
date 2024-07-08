@@ -1,0 +1,32 @@
+{
+  "name": "interfaz-fiware",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error:no test specified\" && exit 1",
+    "start": "node .",
+    "test-model": ".\\node_modules\\.bin\\mocha .\\test\\models\\**\\*.js --reporter spec",
+    "test-rest": ".\\node_modules\\.bin\\mocha .\\test\\rest\\**\\*.js --reporter spec",
+    "seeder": "node ./src/seeder.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "chai": "~4.4.1",
+    "chai-http": "~4.4.0",
+    "mocha": "^10.2.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "description": ""
+}
